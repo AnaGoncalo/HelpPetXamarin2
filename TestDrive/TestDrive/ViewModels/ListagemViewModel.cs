@@ -9,11 +9,11 @@ namespace TestDrive.ViewModels
 {
     public class ListagemViewModel
     {
-        public List<Veiculo> Veiculos { get; set; }
+        public List<Denuncia> Denuncias { get; set; }
 
         public ListagemViewModel()
         {
-            this.Veiculos = new ListagemVeiculos().Veiculos;
+            this.Denuncias = new ListagemDenuncias().Denuncias;
         }
     }
 }

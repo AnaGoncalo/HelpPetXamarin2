@@ -15,11 +15,11 @@ namespace TestDrive.Views
             InitializeComponent();
         }
 
-        private void listViewVeiculos_ItemTapped(object sender, ItemTappedEventArgs e)
+        private void listViewDenuncias_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var veiculo = (Veiculo)e.Item;
+            var denuncia = (Denuncia)e.Item;
 
-            Navigation.PushAsync(new DetalheView(veiculo));
+            Navigation.PushAsync(new DetalheView(denuncia));
         }
     }
 }

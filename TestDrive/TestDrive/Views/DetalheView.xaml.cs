@@ -11,18 +11,14 @@ namespace TestDrive.Views
 {
     public partial class DetalheView : ContentPage
     {
-        public Veiculo Veiculo { get; set; }
+        public Denuncia Denuncia { get; set; }
 
-        public DetalheView(Veiculo veiculo)
+        public DetalheView(Denuncia denuncia)
         {
             InitializeComponent();
-            this.Veiculo = veiculo;
-            this.BindingContext = new DetalheViewModel(veiculo);
+            this.Denuncia = denuncia;
+            this.BindingContext = new DetalheViewModel(Denuncia);
         }
 
-        private void buttonProximo_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new AgendamentoView(this.Veiculo));
-        }
     }
 }
