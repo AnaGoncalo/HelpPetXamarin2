@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDrive.Views.Sobre"
+             Title="Help Pet">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="5">
+                <Label Text="Sobre Help Pet" FontSize="20" FontAttributes="Bold" TextColor="DarkOrange" HorizontalTextAlignment="Center"/>
+                <Label FontSize="16" HorizontalTextAlignment="Center" Text="O Help Pet é essencialmente um sistema de ajuda animal, cujo principal objetivo é auxiliar animais a encontrarem um lar através da adoção. Essa plataforma também fornece outras maneiras de ajudar, como a denúncia de maus tratos, mantendo segura a identidade do denunciante; a visualização de informações de instituições de apoio de animais, onde será possível ver o local bem como doações necessárias e quais suprimentos são urgentes. Ainda, preocupa-se com a ajuda dos animais que já possuem um lar, mas estão perdidos, dessa forma, outro tipo de listagem de animais é disponibilizado, com pets que estão perdidos ou foram resgatados. O sistema é uma plataforma de ajuda também para os donos e simpatizantes de pets, assim, possui um portal de informações fornecidas por outros usuários que gostariam de dividir sua experiência na criação de um pet. Outra forma de ajudar Helpers, é a divulgação de eventos relacionados ao mundo dos pets, que podem ter caráter de adoção de novos amigos bichos ou até mesmo o encontro para socialização de Helpers. "/>
+                <Label FontSize="16" TextColor="#1E90FF" HorizontalTextAlignment="Center" Text="Nos acompanhe no Facebook/HelpPetPage"/>
+                <Label FontSize="14" HorizontalTextAlignment="Center" Text="by JosAnAnne"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

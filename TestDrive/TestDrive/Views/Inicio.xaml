@@ -2,11 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TestDrive"
-             x:Class="TestDrive.Views.Inicio">
+             x:Class="TestDrive.Views.Inicio"
+             BackgroundColor="#FFFFFF"
+             Title="Help Pet">
     <ContentPage.Content>
-        <StackLayout Padding="5" VerticalOptions="CenterAndExpand">
-            <Label Text="Help Pet" TextColor="#FF8C00" FontSize="30" Margin="10" XAlign="Center"/>
+        <StackLayout Padding="5" VerticalOptions="CenterAndExpand" BackgroundColor="#FFFFFF">
+            <Image Source="logohp.PNG"/>
             <Button Text="Denuncias" Clicked="Btn_ListarDenuncias" BackgroundColor="#FF8C00" TextColor="#FFFFFF" />
+            <Button Text="Sobre" Clicked="Btn_Sobre" BackgroundColor="#1E90FF" TextColor="#FFFFFF" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

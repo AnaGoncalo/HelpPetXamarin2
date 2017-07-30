@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestDrive.Views.DetalheView"
-             Title="{Binding Denuncia.Titulo}">
+             Title="Denúncias">
     <StackLayout Padding="25">
-        <Label Text="{Binding Denuncia.Titulo}"/>
-        <Label Text="{Binding Denuncia.Texto}"/>
-        <Label Text="{Binding Denuncia.Data}"/>
-
+        <Label Text="{Binding Denuncia.Titulo}" FontSize="18" TextColor="#000000" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        <Label Text="{Binding Denuncia.Texto}" FontSize="16" TextColor="#000000"/>
+        <Label Text="{Binding Denuncia.Tipo}" FontSize="14" TextColor="#000000" HorizontalTextAlignment="End"/>
+        <Label Text="{Binding Denuncia.Data}" FontSize="14" TextColor="#000000" HorizontalTextAlignment="End"/>
     </StackLayout>
 </ContentPage>

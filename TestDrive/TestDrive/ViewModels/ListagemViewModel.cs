@@ -35,7 +35,8 @@ namespace TestDrive.ViewModels
                     this.Denuncias.Add(new Denuncia
                     {
                         Titulo = denunciaJson.titulo,
-                        Texto = denunciaJson.texto,
+                        Texto = denunciaJson.descricao,
+                        Tipo = denunciaJson.tipo,
                         Data = denunciaJson.data
                     });
                 }
@@ -50,7 +51,8 @@ namespace TestDrive.ViewModels
     class DenunciaJson
     {
         public string titulo { get; set; }
-        public string texto { get; set; }
+        public string descricao { get; set; }
+        public string tipo { get; set; }
         public string data { get; set; }
     }
 }

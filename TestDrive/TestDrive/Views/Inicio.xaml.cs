@@ -20,5 +20,11 @@ namespace TestDrive.Views
         {
             Navigation.PushAsync(new ListagemView());
         }
-	}
+
+        public void Btn_Sobre(object sender, ItemTappedEventArgs e)
+        {
+            Navigation.PushAsync(new Sobre());
+        }
+
+    }
 }

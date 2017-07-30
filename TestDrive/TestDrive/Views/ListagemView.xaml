@@ -5,23 +5,28 @@
              Title="Help Pet"
              x:Class="TestDrive.Views.ListagemView">
     <ContentPage.BindingContext>
-        
     </ContentPage.BindingContext>
-    <ListView x:Name="listViewDenuncias" ItemsSource="{Binding Denuncias}" Margin="25"
-              ItemTapped="ListViewDenuncias_ItemTapped">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <ViewCell.View>
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding Titulo}" FontSize="20" VerticalTextAlignment="Center"></Label>
-                            <Label Text=" - " VerticalTextAlignment="Center"></Label>
-                            <Label Text="{Binding Data}" FontAttributes="Bold" VerticalTextAlignment="Center"></Label>
-                        </StackLayout>
-                    </ViewCell.View>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
 
+        <ScrollView>
+            <ListView x:Name="listViewDenuncias" ItemsSource="{Binding Denuncias}" Margin="0" 
+                  ItemTapped="ListViewDenuncias_ItemTapped" SeparatorColor="#FF8C00">
+                <ListView.Header>
+                    <Label Text="Denúncias" XAlign="Center" FontAttributes="Bold" FontSize="25" TextColor="#FF8C00"/>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Vertical" BackgroundColor="#FFFFFF">
+                                <Label Text="{Binding Titulo}" FontSize="16" TextColor="#000000" VerticalTextAlignment="Center"></Label>
+                                <Label Text="{Binding Tipo}"   FontSize="12" TextColor="#000000" HorizontalTextAlignment="End"></Label>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    
 </ContentPage>
+    
