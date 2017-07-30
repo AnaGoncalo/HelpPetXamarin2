@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestDrive"
+             x:Class="TestDrive.Views.Inicio">
+    <ContentPage.Content>
+        <StackLayout Padding="5" VerticalOptions="CenterAndExpand">
+            <Label Text="Help Pet" TextColor="#FF8C00" FontSize="30" Margin="10" XAlign="Center"/>
+            <Button Text="Denuncias" Clicked="Btn_ListarDenuncias" BackgroundColor="#FF8C00" TextColor="#FFFFFF" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
